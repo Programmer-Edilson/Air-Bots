@@ -2,22 +2,20 @@
     <body>
         <h1 id="success">hello</h1>
         <script>
+            let delay = 500;
+            let timerId = setTimeout(function request() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://socialpostgram.herokuapp.com', true);
 
-        let delay = 500;
-let timerId = setTimeout(function request() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/server', true);
-
-    xhr.onload = function () {
-       if(this.status == 200){
-        alert();
-         else {
-        alert();
-            console.log('error');
-       }
-     xhr.send(null);
-
-  }
+            xhr.onload = function () {
+            if(this.status == 200){
+                alert();
+            else {
+                    alert();
+                    console.log('error');
+                }
+                xhr.send(null);
+            }
 
   timerId = setTimeout(request, delay);
 
