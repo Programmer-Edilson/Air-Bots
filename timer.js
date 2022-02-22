@@ -1,4 +1,4 @@
-let delay = 500;
+/"let delay = 500;
 
 let timerId = setTimeout(function request() {
     var xhr = new XMLHttpRequest();
@@ -22,4 +22,6 @@ let timerId = setTimeout(function request() {
 
   timerId = setTimeout(request, delay);
 
-}, delay);
+}, delay); "/
+
+alert();
