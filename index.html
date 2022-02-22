@@ -8,18 +8,18 @@
             xhr.open('GET', 'https://socialpostgram.herokuapp.com', true);
 
             xhr.onload = function () {
-            if(this.status == 200){
-                alert();
-            else {
+                if(this.status == 200){
+                    alert();
+                else {
                     alert();
                     console.log('error');
                 }
                 xhr.send(null);
             }
 
-  timerId = setTimeout(request, delay);
+            timerId = setTimeout(request, delay);
 
-}, delay);
+        }, delay);
         </script>
     </body>
 </html>
