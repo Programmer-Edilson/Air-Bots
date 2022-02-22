@@ -3,6 +3,7 @@ let delay = 500;
 let timerId = setTimeout(function request() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/server', true);
+    alert();
 
     xhr.onload = function () {
        if(this.status == 200){
