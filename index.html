@@ -4,17 +4,14 @@
         <script>
 
         let delay = 500;
-alert();
 let timerId = setTimeout(function request() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/server', true);
 
     xhr.onload = function () {
        if(this.status == 200){
-            const success = document.getElementById('success')
-            success.style.color = 'gree';
-            success.innerText = this.responseText
-       } else {
+        alert();
+         else {
             console.log('error');
        }
      xhr.send(null);
