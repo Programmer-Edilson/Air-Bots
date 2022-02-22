@@ -7,12 +7,12 @@ let timerId = setTimeout(function request() {
     xhr.onload = function () {
        if(this.status == 200){
             const success = document.getElementById('success')
-            success.style.color = 'gree';
+            success.style.color = 'green';
             success.innerText = this.responseText
        } else {
             console.log('error');
        }
-    delay *= 2;
+
     };
 
     xhr.send(null);
